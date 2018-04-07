@@ -265,6 +265,12 @@ console.log(graduation(120,false));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+
+  if (speed < 100){return 'You are riding an Amtrak.'}
+  else if (speed >= 100){return "Now you ballin' in the Shinkansen!"} 
+}
+console.log(moneyTrain(200));
 
 /*
  * #14
