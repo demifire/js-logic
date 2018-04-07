@@ -64,7 +64,10 @@ console.log(login('test1234'));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
 
+
+}
 
 /*
  * #4
