@@ -82,7 +82,7 @@ console.log(isGreaterThan(2,1));
 
 function mustBeTrue(boo){
 
-  if (boo === true){return true}
+  if (boo === true){return true}else{return false}
 }
 console.log(mustBeTrue(true));
 
@@ -118,6 +118,12 @@ console.log(bigBird('wat'));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+
+  if(first === second){return 'You look mahvelous!'}
+  else{return 'I dont know who you are anymore.'}
+}
+console.log(isEqual(2,3));
 
 /*
  * #7
