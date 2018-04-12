@@ -266,7 +266,7 @@ console.log(graduation(120,false));
 */ 
 
 function moneyTrain(speed){
-
+if (speed < 50){return "You are riding Honolulu's Rail."}
   if (speed < 100){return 'You are riding an Amtrak.'}
   else if (speed >= 100){return "Now you ballin' in the Shinkansen!"} 
 }
@@ -326,11 +326,12 @@ Inside the function, create a switch statement that will check the daily special
       break;
     case 'Friday':
       menu = 'stirfry and tofu broccoli';
-      break; // break stops the function and moves on
-  
-  } return menu
+      break;
+      default: menu = "No special";
+      
+  } return menu;
 }
-  console.log(dailySpecials('Thursday')); 
+  console.log(dailySpecials('Thursdsf')); 
 
   var day = 'Tuesday';
   var din = null;
@@ -414,6 +415,16 @@ for (i = 0; i < players.length; i++) {
  * Console.log your result.
 */
 
+var numArray = [23, 14, 54, 23, 35];
+function sumItUp(arr){
+  var total = 0;
+  for (var i = 0; i < arr.length; i++) { 
+    console.log(arr[i]);
+    total += arr[i]; 
+  }
+return total;
+}
+console.log("sumitup ", sumItUp(numArray));
 
 
 /*
@@ -429,6 +440,20 @@ for (i = 0; i < players.length; i++) {
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var west = []; //when is something supposed to be a global variable, and when is it supposed to be local???
+var east = [];
+
+function allStars(ballers){
+  for (var i=0 ; i<ballers.length ; i++){
+    if (i%2 === 0){
+      east.push(ballers[i])
+  } else {west.push(ballers[i])}
+}
+}
+allStars(players);
+console.log(east);
+console.log(west);
+
 /*
  * #19
  * Function - subways
